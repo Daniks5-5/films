@@ -33,7 +33,7 @@ renderFilms() {
     let movieTitle = this.findFilmsInput.value; // Название фильма, введенное пользователем
 
     // Делаем  запрос к OMDB API
-    fetch(`http://www.omdbapi.com/?apikey=${apiKey}&t=${movieTitle}`)
+    fetch(`https://www.omdbapi.com/?apikey=${apiKey}&t=${movieTitle}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
