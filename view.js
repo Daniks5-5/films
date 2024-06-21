@@ -54,11 +54,11 @@ renderFilms() {
                          </div>
                          <div class="films__text">
                              <p href="" class="films__link"> ${data.Title}</p>
-                             <p class="films__years">Выпуск: ${data.Year}</p>
-                             <p class="films__years">Актеры: ${data.Actors}</p>
-                             <p class="films__years">Режиссер: ${data.Director}</p>
-                             <p class="films__years">Жанр: ${data.Genre}</p>
-                             <p class="films__years">Тип: ${data.Type}</p>
+                             <p class="films__years">Выпуск:  ${data.Year}</p>
+                             <p class="films__years">Актеры:  ${data.Actors}</p>
+                             <p class="films__years">Режиссер:  ${data.Director}</p>
+                             <p class="films__years">Жанр:  ${data.Genre}</p>
+                             <p class="films__years">Тип:  ${data.Type}</p>
                             
                          </div>
                     </div>`;
