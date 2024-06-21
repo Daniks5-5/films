@@ -7,7 +7,7 @@ class Controller{
 
     init(){
    this.view.render(); 
-   this.api.getMems();
+
 
  
     }

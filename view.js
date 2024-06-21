@@ -47,21 +47,24 @@ renderFilms() {
                         <p>Фильм не найден</p>
                     </div>`;
             } else {
-                this.renderInfoFilms.innerHTML = `
+                this.inputNode.innerHTML = `
                     <div class="films-list">
                          <div class="films__img">
                              <img src="${data.Poster}" alt="${data.Title}" class="photo-films">
                          </div>
                          <div class="films__text">
-                             <p href="" class="films__link">Название: ${data.Title}</p>
+                             <p href="" class="films__link"> ${data.Title}</p>
                              <p class="films__years">Выпуск: ${data.Year}</p>
                              <p class="films__years">Актеры: ${data.Actors}</p>
                              <p class="films__years">Режиссер: ${data.Director}</p>
                              <p class="films__years">Жанр: ${data.Genre}</p>
-                             <p class="films__type">Тип: ${data.Type}</p>
-                             <p class="films__plot">${data.Plot}</p>
+                             <p class="films__years">Тип: ${data.Type}</p>
+                            
                          </div>
                     </div>`;
+                    this.renderInfoFilms.innerHTML = `
+                     <p class="films__plot">Описание: ${data.Plot}</p>
+                    `;
             }
         })
         .catch(error => {
